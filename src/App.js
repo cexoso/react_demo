@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Head from './react/head';
 import Body from './react/body';
 import BodyInfo from './react/bodyInfo';
+
+import carouselPage from "./react/carouselPage";
+
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -16,6 +19,7 @@ class App extends Component {
           <Head />
           <Route path="/travel" component={Body}/>
           <Route path="/info" component={BodyInfo}/>
+          <Route path="/carousel" component={carouselPage} />
         </div>
       </Router>
     );
